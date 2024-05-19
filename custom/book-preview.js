@@ -1,4 +1,4 @@
-import { authors } from './data.js';
+import { authors } from '../data.js';
 
 class BookPreview extends HTMLElement {
     constructor() {
@@ -25,5 +25,4 @@ class BookPreview extends HTMLElement {
         `;
     }
 }
-
 customElements.define('book-preview', BookPreview);

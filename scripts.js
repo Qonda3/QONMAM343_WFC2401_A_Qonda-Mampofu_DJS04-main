@@ -1,3 +1,4 @@
+import './custom/book-preview.js';
 import { books, authors, genres, BOOKS_PER_PAGE } from './data.js';
 import { createBookElement, renderBookList, createOptionElements, handleThemeChange } from './tasks.js';
 
@@ -131,6 +132,6 @@ function handleBookClick(event) {
         document.querySelector('[data-list-title]').innerText = active.title
         document.querySelector('[data-list-subtitle]').innerText = `${authors[active.author]} (${new Date(active.published).getFullYear()})`
         document.querySelector('[data-list-description]').innerText = active.description
-    }
+    }   
 }
 init();
